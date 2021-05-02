@@ -22,6 +22,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '#23lx%4y=_+ivj)8+5%!w!z2x)rbgc!5mju#5+us%1pe9z8n=#'
 
+REFRESH_TOKEN_SECRET='#Kas8zEgHQSQUuchZ6!Mw=b'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -135,8 +137,5 @@ STATICFILES_DIRS = [
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES':[
         'rest_framework.permissions.IsAuthenticated'
-    ],
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ]
 }
