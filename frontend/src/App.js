@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Header, Footer } from "./components";
 
 function App() {
   return (
-    <div className="App">
-      Hello World this is awesome
+    <div>
+      <Header />
+      <Footer />
     </div>
   );
 }
